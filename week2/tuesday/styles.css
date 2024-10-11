@@ -23,7 +23,7 @@ body {
     width: 300px;
     gap: 30px;
     /* 1. Add 10px of space around each social media item  */
-
+    margin: 10px;
 }
 
 
@@ -33,9 +33,9 @@ button {
     border-radius: 10px;
     width: 100px;
     /* 2. Add 10px of padding around this button */
-
+    padding: 10px;
     /* 3. Remove the border of this button */
-
+    border: none;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
 
 h2 {
     /* 4. Remove all margins around the h2 element */
-    
+    margin: none;
 }
 
 h3 {
@@ -52,6 +52,7 @@ h3 {
     color: #757575;
     font-weight: 400;
     /* 5. Add 5px of margin at the top of the h3 element */
+    margin-top: 5px;
 
 }
 
