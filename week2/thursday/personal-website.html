@@ -5,29 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            transition: background-color 0.5s ease;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .nav button, .resume button, .message button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav button:hover, .resume button:hover, .message button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .my-picture {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .resume {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-media ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .social-media li {
+            display: inline;
+            margin-right: 15px;
+            font-size: 18px;
+            color: #343a40;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .social-media li:hover {
+            color: #007bff;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #495057;
+        }
+
+        .message {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .flash {
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0% { background-color: #ffc107; }
+            50% { background-color: #ffeb3b; }
+            100% { background-color: #ffc107; }
+        }
+    </style>
 </head>
 <body>
-    <div class = "nav">
-        <button>About</button>
-        <button>Projects</button>
+    <div class="nav">
+        <button id="about-btn">About</button>
+        <button id="projects-btn">Projects</button>
     </div>
-    <div class = "my-picture">
-        <img src = "" href = "linktoinstagram">
+
+    <div class="resume">
+        <button id="resume-btn">Resume</button>
     </div>
-    <div class = "resume">
-        <button href = "insert here">Resume</button>
-    </div>
-    <div class = "social-media">
+
+    <div class="social-media">
         <ul>
-            <li>Linkedin</li>
-            <li>Github</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
+            <li id="linkedin">Linkedin</li>
+            <li id="github">Github</li>
+            <li id="facebook">Facebook</li>
+            <li id="instagram">Instagram</li>
         </ul>
     </div>
-    <div class = "about">Hello I am Anshul</div>
-    <div class = "message me">
-        <button>message me</button>
+
+    <div class="about">Hello I am Anshul</div>
+
+    <div class="message">
+        <button id="message-btn">Message Me</button>
     </div>
 </body>
 </html>
