@@ -1,102 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            transition: background-color 0.5s ease;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #f8f9fa;
-            padding: 10px;
-        }
-
-        .nav button, .resume button, .message button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .nav button:hover, .resume button:hover, .message button:hover {
-            background-color: #0056b3;
-            transform: scale(1.1);
-            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .my-picture {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .resume {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social-media {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social-media ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .social-media li {
-            display: inline;
-            margin-right: 15px;
-            font-size: 18px;
-            color: #343a40;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        .social-media li:hover {
-            color: #007bff;
-        }
-
-        .about {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-            color: #495057;
-        }
-
-        .message {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .flash {
-            animation: flash 1s infinite;
-        }
-
-        @keyframes flash {
-            0% { background-color: #ffc107; }
-            50% { background-color: #ffeb3b; }
-            100% { background-color: #ffc107; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="nav">
@@ -122,5 +30,9 @@
     <div class="message">
         <button id="message-btn">Message Me</button>
     </div>
+
+    <div class="projects-list"></div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
