@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movies.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class = "box">
+        <script src="script.js"></script>
+        <div class = "title" id = "head">
+            Movies
+
+            <!-- <script> document.getElementById("head").innerHTML = "new head"</script> -->
+        </div>
+        <hr>
+        <div class = "contents">
+            <div class = "items">
+                <ul id = "itemList"></ul>
+                <script src = "movies.js"></script>
+            </div>
+        </div>
+    </div>
+    <div class = "button">
+        <script src = "movies.js"></script>
+    </div>
+    <h1>Add Movie</h1>
+    <form name = "add" onsubmit="handleSubmit(event)">
+        <label for="movie">Movie Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>

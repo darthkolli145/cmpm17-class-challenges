@@ -1,0 +1,35 @@
+body{
+    padding: 10%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 2px solid black;
+    box-shadow: 10px 10px;
+    padding: 20px;  
+}
+
+.title{
+    text-align: center;
+    font-size: 400%;
+    font-family: "Courier New",monospace;
+}
+hr {
+    border: none;                /* Remove default border */
+    height: 2px;                /* Set the height of the line */
+    background-color: black;    /* Set the color of the line */
+    margin: 20px 0;             /* Set margin above and below the line */
+}
+.items{
+    font-size: 200%;
+    padding: 10%;
+    font-family: "Georgia", serif;
+
+}
+.time{
+    font-size: small;
+} 

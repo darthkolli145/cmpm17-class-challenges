@@ -1,0 +1,87 @@
+// Variables
+$primary-color: #3498db; // Blue color for the main elements
+$secondary-color: #2ecc71; // Green color for completed tasks
+$font-stack: Arial, sans-serif; // Font stack for the application
+
+// Body styles
+body {
+  font-family: $font-stack;
+  background-color: #f4f4f4; // Light background for the app
+  margin: 0;
+  padding: 20px; // Add padding to body
+}
+
+// Task input form styles
+div {
+  margin-bottom: 20px; // Space below the input form
+
+  label {
+    display: block; // Make labels block elements
+    margin-bottom: 5px; // Space below labels
+    font-weight: bold; // Bold labels
+  }
+
+  input[type="text"] {
+    padding: 10px; // Add padding to the text input
+    width: 100%; // Full width input
+    max-width: 400px; // Max width for input
+    border: 1px solid #ccc; // Light border
+    border-radius: 5px; // Rounded corners
+    margin-bottom: 10px; // Space below text input
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px; // Space between checkbox and label
+  }
+
+  button {
+    background-color: $primary-color; // Main button color
+    color: white; // Text color
+    padding: 10px 15px; // Padding for button
+    border: none; // No border
+    border-radius: 5px; // Rounded corners
+    cursor: pointer; // Change cursor to pointer
+    transition: background-color 0.3s; // Transition effect for hover
+
+    &:hover {
+      background-color: darken($primary-color, 10%); // Darken on hover
+    }
+  }
+}
+
+// Task list styles
+ul {
+  list-style-type: none; // Remove default list styling
+  padding: 0; // Remove padding from the list
+
+  li {
+    background: white; // White background for each task
+    padding: 10px; // Padding inside each task
+    margin-bottom: 10px; // Space between tasks
+    border-radius: 5px; // Rounded corners
+    display: flex; // Flex display for alignment
+    justify-content: space-between; // Space between items in the task
+    align-items: center; // Center align items vertically
+
+    span {
+      flex-grow: 1; // Allow text to grow and fill space
+      margin-right: 10px; // Space between text and buttons
+
+      &.completed {
+        text-decoration: line-through; // Line through completed tasks
+        color: $secondary-color; // Change color for completed tasks
+      }
+    }
+
+    button {
+      background: transparent; // Transparent background for action buttons
+      color: $primary-color; // Use primary color for buttons
+      border: none; // No border
+      cursor: pointer; // Change cursor to pointer
+
+      &:hover {
+        text-decoration: underline; // Underline on hover
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<!-- Task input form -->
+<div>
+  <label for="taskTitle">Task Title</label>
+  <input
+    type="text"
+    id="taskTitle"
+    [(ngModel)]="newTitle"
+    placeholder="Enter task title" />
+
+  <label for="taskStatus">status</label>
+  <input
+    type="checkbox"
+    id="taskStatus"
+    [(ngModel)]="newStat" />
+
+  <button (click)="AddTask()">Add Task</button>  <!-- Call AddTask() when clicked -->
+</div>
+
+<!-- Task list -->
+<div *ngIf="tasks.length > 0">
+  <ul>
+    <li *ngFor="let task of tasks">
+      <span [class.completed]="task.status">{{ task.title }}</span>  <!-- Style task based on status -->
+      <button (click)="toggleStatus(task.id)">Toggle Status</button>  <!-- Toggle status -->
+      <button (click)="removeTask(task.id)">Remove</button>  <!-- Remove task -->
+    </li>
+  </ul>
+</div>
