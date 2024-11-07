@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TaskTracker</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Born Function</title>
 </head>
 <body>
-  <app-root></app-root>
+    <p id="birthYear"></p>
+
+    <script>
+        function yearBorn(age) {
+            const currentYear = new Date().getFullYear();
+            const birthYear = currentYear - age;
+            return `You were born in ${birthYear}`;
+        }
+
+        document.getElementById("birthYear")!.innerText = yearBorn(24);
+    </script>
 </body>
 </html>
